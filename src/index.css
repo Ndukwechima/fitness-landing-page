@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* --- Fonts --- */
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Apply Oswald font to all heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Apply Inter font to paragraphs and other UI text elements */
+p, a, li, span, button, input, label, select, textarea {
+  font-family: var(--font-body);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
