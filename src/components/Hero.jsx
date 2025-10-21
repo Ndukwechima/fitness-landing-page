@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import HeroImg from '../assets/images/hero-image.png'
 
 const Hero = () => {
   return (
@@ -49,7 +50,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src="/src/assets/images/hero-image.png"
+          src={HeroImg}
           alt="Fitness coach training client"
           className="rounded-2xl shadow-2xl w-[90%] 
           md:w-[80%] object-cover"
