@@ -11,7 +11,7 @@ const Hero = () => {
     >
       {/* Left Content */}
       <motion.div
-        className="md:w-1/2 space-y-6 px-12 py-8"
+        className="md:w-1/2 space-y-6 px-8 md:px-12 py-8"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}

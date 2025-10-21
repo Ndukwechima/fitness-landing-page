@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import HeroImage from "../assets/images/hero-image.png"
 
 const ParallaxSection = () => {
   return (
     <section
-    id="program"
+      id="program"
       className="relative h-[100vh] flex items-center justify-center bg-fixed bg-center bg-cover"
       style={{
-        backgroundImage: `url('/src/assets/images/hero-image.png')`, // Replace with your image path
+        backgroundImage: `url(${HeroImage})`,
       }}
     >
       {/* Overlay */}
@@ -30,7 +31,7 @@ const ParallaxSection = () => {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="text-lg md:text-xl text-gray-200 mb-12 max-w-2xl mx-auto"
         >
-          Your next level starts here — train with intensity, fuel with focus, 
+          Your next level starts here — train with intensity, fuel with focus,
           and live with purpose. No shortcuts. Just results.
         </motion.p>
 
