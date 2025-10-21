@@ -6,7 +6,7 @@ const ParallaxSection = () => {
   return (
     <section
       id="program"
-      className="relative h-[100vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+      className="relative flex items-center justify-center bg-fixed bg-center bg-cover"
       style={{
         backgroundImage: `url(${HeroImage})`,
       }}
@@ -20,7 +20,7 @@ const ParallaxSection = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl font-bold mb-8"
+          className="text-3xl md:text-6xl font-bold mb-8 py-4"
         >
           Transform. Perform. Dominate.
         </motion.h2>
@@ -36,7 +36,7 @@ const ParallaxSection = () => {
         </motion.p>
 
         {/* Floating Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-6">
           {[
             {
               title: "Custom Training Plan",
